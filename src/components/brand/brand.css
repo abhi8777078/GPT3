@@ -1,0 +1,21 @@
+.brand_main{
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+.brand_main img{
+    height: 1.50919rem; 
+    margin: 0 1rem;
+    cursor: pointer;
+}
+@media screen and (max-width: 992px) {
+    .brand_main{
+        flex-direction: column;
+    }
+    .brand_main img{
+        margin: 1rem 0;
+    }
+}

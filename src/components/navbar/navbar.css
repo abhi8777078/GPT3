@@ -1,0 +1,92 @@
+.navabar_main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 6rem;
+}
+.navbar_logo {
+  width: 3rem;
+  height: 2rem;
+  font-weight: 700;
+  cursor: pointer;
+  font-family: "Manrope", sans-serif;
+}
+
+.navbar_links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar_links a {
+  color: white;
+  text-decoration: none;
+}
+.navbar_links p {
+  margin: 0 1rem;
+  font-family: "Manrope", sans-serif;
+  font-weight: 500;
+}
+.navbar_sign {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Manrope", sans-serif;
+  font-weight: 500;
+}
+.navbar_sign button {
+  background-color: #ff4820;
+  color: white;
+  width: 9rem;
+  height: 3rem;
+  flex-shrink: 0;
+  font-family: "Manrope", sans-serif;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+.navbar_sign p {
+  margin-right: 1rem;
+}
+.navbar_menu {
+  display: none;
+}
+@media screen and (max-width: 992px) {
+  .navbar_menu {
+    display: flex;
+  }
+  .navbar_links {
+    display: none;
+  }
+  .navbar_sign {
+    margin-left: 50%;
+  }
+  .navbar_sign button {
+    width: 7rem;
+    height: 3rem;
+    margin-right: 0.5rem;
+  }
+  .menu_res {
+    display: flex;
+    flex-direction: column;
+    /* background-color: red; */
+    width: 8rem;
+    height: 10rem;
+    position: absolute;
+    right: 0;
+    top: 6rem;
+  }
+  
+  .menu_res p a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    text-transform: capitalize;
+    cursor: pointer;
+    font-size: 18px;
+  }
+  .menu_res p a:hover{
+    font-size: 20px;
+    
+  }
+}
